@@ -166,7 +166,7 @@ header {
 
 .ns_main_news .main_news_container {
   display: grid;
-  grid-template-columns: 360px 600px 360px;
+  grid-template-columns: 350px 720px 350px;
   justify-content: space-between;
   align-items: start;
   overflow: hidden;
@@ -203,6 +203,7 @@ header {
 .ns_main_news .ns_img {
   width: 200px;
   height: 80px;
+  overflow: hidden;
 }
 .ns_main_news .ns_img img {
   display: block;
@@ -210,6 +211,10 @@ header {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.ns_main_news .ns_img img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 .ns_main_news .ns_desc {
   color: rgba(0, 0, 0, 0.68);
@@ -246,6 +251,8 @@ header {
   flex-direction: column;
   justify-content: start;
   align-items: start;
+  border-right: 1px solid #ddd;
+  overflow: hidden;
 }
 .ns_main_news .ns_topmain_news {
   display: flex;
@@ -255,6 +262,7 @@ header {
 .ns_main_news .ns_top_img {
   width: 600px;
   height: 200px;
+  overflow: hidden;
 }
 .ns_main_news .ns_top_img img {
   display: block;
@@ -262,6 +270,10 @@ header {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.ns_main_news .ns_top_img img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 .ns_main_news .ns_reporter_name {
   font-family: "Merriweather", serif;
@@ -315,7 +327,42 @@ header {
 .ns_main_news .ns_news_middle_side_content:nth-child(1) {
   border-right: 1px solid #ddd;
 }
+.ns_main_news .ns_news_rightside {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.ns_main_news .ns_news_right_side_content {
+  border-bottom: 1px solid #ddd;
+  padding: 8px 4px;
+}
+.ns_main_news .ns_news_right_side_content:last-child {
+  border: none;
+}
 
+@media screen and (max-width: 760px) {
+  .ns_main_news .main_news_container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .ns_main_news .ns_news_left_side_img_with_text {
+    flex-wrap: wrap;
+  }
+  .ns_main_news .ns_topmain_news {
+    flex-wrap: wrap;
+  }
+  .ns_main_news .ns_submain_news {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 640px) {
+  .ns_main_news .main_news_container {
+    grid-template-columns: 1fr;
+  }
+  .ns_main_news .main_news_container .ns_news_middleside {
+    grid-row: 1/2;
+  }
+}
 @font-face {
   font-family: "Helvetica";
   src: url("/fonts/Helvetica.ttf") format("truetype");
@@ -324,7 +371,7 @@ header {
   font-display: swap;
 }
 .ns-container {
-  max-width: 1320px;
+  max-width: 1420px;
   width: calc(100% - 24px);
   margin-inline: auto;
 }/*# sourceMappingURL=style.css.map */

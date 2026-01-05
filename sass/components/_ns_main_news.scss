@@ -1,7 +1,7 @@
 .ns_main_news {
     .main_news_container {
         display: grid;
-        grid-template-columns: 360px 600px 360px;
+        grid-template-columns: 350px 720px 350px;
         justify-content: space-between;
         align-items: start;
         overflow: hidden;
@@ -43,12 +43,16 @@
     .ns_img {
         width: 200px;
         height: 80px;
-
+        overflow: hidden;
         img {
             display: block;
             width: 100%;
             height: 100%;
             object-fit: cover;
+            &:hover {
+                transform: scale(1.05);
+                transition: transform 0.3s ease;
+            }
         }
     }
 
@@ -91,6 +95,8 @@
         flex-direction: column;
         justify-content: start;
         align-items: start;
+        border-right: 1px solid $col-gray;
+        overflow: hidden;
     }
 
     .ns_topmain_news {
@@ -102,11 +108,17 @@
     .ns_top_img{
         width: 600px;
         height: 200px;
+        overflow: hidden;
         img {
             display: block;
             width: 100%;
             height: 100%;
             object-fit: cover;
+
+            &:hover {
+                transform: scale(1.05);
+                transition: transform 0.3s ease;
+            }
         }
     }
 
@@ -167,6 +179,53 @@
         border-bottom: 1px solid $col-gray;
         &:nth-child(1) {
             border-right: 1px solid $col-gray;
+        }
+    }
+
+    .ns_news_rightside {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .ns_news_right_side_content {
+        border-bottom: 1px solid $col-gray;
+        padding: 8px 4px;
+
+        &:last-child {
+            border: none
+        }
+    }
+}
+
+@media screen and (max-width: 760px){
+    .ns_main_news {
+        .main_news_container {
+            grid-template-columns: 1fr 1fr;
+        }
+        .ns_news_left_side_img_with_text {
+            flex-wrap: wrap;
+        }
+
+        .ns_topmain_news {
+            flex-wrap: wrap;
+        }
+
+        .ns_submain_news {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media screen and (max-width: 640px){
+    .ns_main_news {
+        .main_news_container {
+            grid-template-columns: 1fr;
+
+            .ns_news_middleside {
+                grid-row: 1 / 2;
+            }
         }
     }
 }
