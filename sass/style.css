@@ -155,6 +155,7 @@ header {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   gap: 4px;
+  cursor: pointer;
 }
 .ns_navbar .ns_icon_text {
   font-size: 15px;
