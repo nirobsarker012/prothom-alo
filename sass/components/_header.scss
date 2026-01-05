@@ -1,0 +1,99 @@
+.header_announcement_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 16px 0;
+    .ns_logo {
+        width: 160px;
+        height: 50px;
+    }
+
+    .ns_logo img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .ns_annou_contents {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .ns_ann_content {
+        display: flex;
+        align-items: start;
+        gap: 8px;
+        border-left: 1px solid $col-gray;
+        padding-left: 14px;
+        
+        &:first-child {
+            border: none;
+        }        
+    }
+
+    .ns_ann_img {
+        width: 70px;
+        height: 70px;      
+    }
+
+    .ns_ann_img img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .ns_ann_icon {
+        color: #D60000;
+        display: block;
+        background: #000;
+        z-index: 99;
+    }
+
+    .ns_ann_text  {
+        display: inline-flex;
+        align-items: center;
+        gap: 2px;
+    }
+    
+    .ns_ann_title {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: $col-primary;
+        font-family: $font-meri;
+    }
+    
+    .auth_container {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .header_announcement_container {
+        .ns_annou_contents {
+            display: none;
+        }
+
+        .auth_container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .ns_search {
+            border-right: 1px solid $col-gray;
+            padding-right: 12px;
+        }
+
+        .ns_user_content {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: $font-roboto;
+        }
+    }
+}
