@@ -21,6 +21,10 @@ a:hover:not(.rte a:hover), a:hover[href=""], a:hover[href="#"] {
   text-decoration: none;
 }
 
+header {
+  border-bottom: 1px solid #ddd;
+}
+
 .header_announcement_container {
   display: flex;
   align-items: center;
@@ -107,6 +111,58 @@ a:hover:not(.rte a:hover), a:hover[href=""], a:hover[href="#"] {
     font-family: "Roboto", sans-serif;
   }
 }
+.ns_navbar {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+.ns_navbar .ns_nav_lists {
+  display: flex;
+  align-items: center;
+}
+.ns_navbar .ns_nav_menu_lists {
+  width: 100%;
+  overflow: hidden;
+}
+.ns_navbar .ns_nav_menus {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.ns_navbar .ns_nav_menus li {
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+.ns_navbar .ns_nav_menus li a {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 700;
+  line-height: 25px;
+  text-wrap: nowrap;
+  transition: all 200ms;
+}
+.ns_navbar .ns_nav_menus li a:hover {
+  color: blue;
+}
+.ns_navbar .ns_nav_icons {
+  display: flex;
+  align-items: center;
+}
+.ns_navbar .ns_nav_icon_contents {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  gap: 4px;
+}
+.ns_navbar .ns_icon_text {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+}
+
 @font-face {
   font-family: "Helvetica";
   src: url("/fonts/Helvetica.ttf") format("truetype");
