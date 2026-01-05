@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+  cursor: pointer;
+}
+a:not(.rte a), a[href=""], a[href="#"] {
+  text-decoration: none;
+}
+a[href=""], a[href="#"] {
+  cursor: default;
+}
+a:hover:not(.rte a:hover), a:hover[href=""], a:hover[href="#"] {
+  text-decoration: none;
+}
