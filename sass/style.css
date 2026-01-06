@@ -465,6 +465,84 @@ header {
   border: none;
 }
 
+.ns_life_style .ns_btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 700;
+  font-family: "Merriweather", serif;
+  line-height: 21px;
+  cursor: pointer;
+  gap: 10px;
+}
+.ns_life_style .ns_life_style_content {
+  background: #f3e5f5;
+}
+.ns_life_style .ns_life_style_content img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.ns_life_style .ns_heading_content {
+  padding: 50px 0;
+}
+.ns_life_style .ns_life_text_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  padding: 6px;
+}
+.ns_life_style .ns_life_style_title {
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.87);
+}
+.ns_life_style .ns_desc {
+  font-family: "Merriweather", serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.ns_life_style .ns_life_slide_left_btn,
+.ns_life_style .ns_life_slide_right_btn {
+  background: #000;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+.ns_life_style .nsLifeStyle {
+  overflow: hidden;
+  position: relative;
+}
+.ns_life_style .ns_life_slide_left_btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.ns_life_style .ns_life_slide_right_btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
 @font-face {
   font-family: "Helvetica";
   src: url("/fonts/Helvetica.ttf") format("truetype");

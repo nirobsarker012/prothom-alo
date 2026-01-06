@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-@import 'components/reset';
-@import 'components/variable';
-@import 'components/header';
-@import 'components/navbar';
-@import 'components/ns_main_news';
-@import 'components/video';
-@import 'components/footer';
+@import "components/reset";
+@import "components/variable";
+@import "components/header";
+@import "components/navbar";
+@import "components/ns_main_news";
+@import "components/video";
+@import "components/ns_lifestyle";
+@import "components/footer";
 
 @font-face {
-  font-family: 'Helvetica';
-  src: url('/fonts/Helvetica.ttf') format('truetype');
+  font-family: "Helvetica";
+  src: url("/fonts/Helvetica.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-
 .ns-container {
-    max-width: 1420px;
-    width: calc(100% - 24px);
-    margin-inline: auto;
+  max-width: 1420px;
+  width: calc(100% - 24px);
+  margin-inline: auto;
 }
