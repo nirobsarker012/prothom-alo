@@ -363,6 +363,108 @@ header {
     grid-row: 1/2;
   }
 }
+.ns_video_slider {
+  padding: 50px 0;
+}
+.ns_video_slider .ns_video_btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 21px;
+  line-height: 27px;
+  font-weight: 700;
+  transition: color 0.3s ease;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.ns_video_slider .ns_video_btn:hover {
+  color: blue;
+}
+.ns_video_slider .ns_slide_img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.ns_video_slider .ns_slide_img img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.ns_video_slider .ns_slide_img .ns_yt_icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.ns_video_slider .ns_slide_text_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.ns_video_slider .ns_slide_video_title {
+  font-family: "Merriweather", serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 4px 0 6px 0;
+}
+.ns_video_slider .ns_slide_video_title:hover {
+  color: blue;
+}
+.ns_video_slider .ns_slide_video_desc {
+  color: rgba(0, 0, 0, 0.68);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: "Merriweather", serif;
+  margin-bottom: 10px;
+}
+.ns_video_slider .ns_slide_video_desc:hover {
+  color: blue;
+}
+.ns_video_slider .ns_slideDate {
+  color: rgba(0, 0, 0, 0.56);
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+.ns_video_slider .nsVideoSwiper {
+  position: relative;
+}
+.ns_video_slider .ns_slide_left_btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.ns_video_slider .ns_slide_right_btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.ns_video_slider .ns_slide_left_btn,
+.ns_video_slider .ns_slide_right_btn {
+  background: #000;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
 @font-face {
   font-family: "Helvetica";
   src: url("/fonts/Helvetica.ttf") format("truetype");
