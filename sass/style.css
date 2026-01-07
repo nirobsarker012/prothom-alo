@@ -935,6 +935,9 @@ header {
     height: 260px;
   }
 }
+.ns_life_style {
+  padding-bottom: 60px;
+}
 .ns_life_style .ns_btn {
   display: inline-flex;
   align-items: center;
@@ -958,7 +961,7 @@ header {
      object-fit: cover;
 }
 .ns_life_style .ns_heading_content {
-  padding: 50px 0;
+  padding: 30px 0;
 }
 .ns_life_style .ns_life_text_content {
   display: flex;
@@ -1013,6 +1016,209 @@ header {
   z-index: 10;
 }
 
+.ns_footer {
+  padding: 20px 0;
+}
+.ns_footer .ns_footer_logo {
+  border-top: 1px solid #ddd;
+}
+.ns_footer .ns_footer_logo .ns_logo_with_text {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  font-family: "Merriweather", serif;
+  padding-top: 26px;
+}
+.ns_footer .ns_footer_logo .ns_logo_with_text img {
+  height: 40px;
+  width: auto;
+}
+.ns_footer .ns_footer_links_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-between;
+  padding: 26px 0;
+  gap: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.ns_footer .ns_link_lists {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 14px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.ns_footer .ns_link_lists a {
+  text-decoration: none;
+  font-family: "Merriweather", serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.ns_footer .ns_link_lists a:hover {
+  color: blue;
+}
+.ns_footer .ns_social_container {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.ns_footer .ns_social_contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+}
+.ns_footer .social_title {
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.87);
+}
+.ns_footer .ns_social_imgs {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.ns_footer .ns_social_imgs img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.ns_footer .ns_app_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.ns_footer .ns_app_imgs {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.ns_footer .ns_app_imgs img {
+  height: 40px;
+  width: auto;
+  cursor: pointer;
+}
+.ns_footer .featured_links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+.ns_footer .featured_links a {
+  font-family: "Merriweather", serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.68);
+}
+.ns_footer .featured_links a:hover {
+  color: blue;
+}
+.ns_footer .cp_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ns_footer .cp_title {
+  color: rgb(117, 117, 117);
+  font-size: 12px;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  padding-bottom: 80px;
+  padding-top: 20px;
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .ns_footer .ns_footer_links_container {
+    justify-content: flex-start;
+    gap: 30px;
+  }
+  .ns_footer .ns_social_container {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+  }
+  .ns_footer .featured_links {
+    flex-wrap: wrap;
+    row-gap: 10px;
+    text-align: center;
+  }
+}
+/* Mobile */
+@media (max-width: 768px) {
+  .ns_footer {
+    padding: 16px 0;
+  }
+  .ns_footer .ns_footer_logo .ns_logo_with_text {
+    justify-content: center;
+    font-size: 20px;
+    padding-top: 20px;
+  }
+  .ns_footer .ns_footer_links_container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .ns_footer .ns_link_lists {
+    align-items: center;
+    row-gap: 10px;
+  }
+  .ns_footer .ns_social_container {
+    gap: 20px;
+  }
+  .ns_footer .ns_social_contents {
+    row-gap: 8px;
+  }
+  .ns_footer .social_title {
+    font-size: 15px;
+  }
+  .ns_footer .ns_app_imgs img {
+    height: 36px;
+  }
+  .ns_footer .featured_links {
+    gap: 10px;
+    padding: 16px 0;
+  }
+}
+/* Small Mobile */
+@media (max-width: 480px) {
+  .ns_footer .ns_footer_logo .ns_logo_with_text {
+    font-size: 18px;
+  }
+  .ns_footer .ns_footer_logo .ns_logo_with_text img {
+    height: 32px;
+  }
+  .ns_footer .ns_link_lists a {
+    font-size: 13px;
+  }
+  .ns_footer .social_title {
+    font-size: 14px;
+  }
+  .ns_footer .ns_social_imgs img {
+    width: 22px;
+    height: 22px;
+  }
+  .ns_footer .featured_links a {
+    font-size: 13px;
+  }
+  .ns_footer .cp_title {
+    padding-bottom: 40px;
+    font-size: 11px;
+    text-align: center;
+  }
+}
 @font-face {
   font-family: "Helvetica";
   src: url("/fonts/Helvetica.ttf") format("truetype");

@@ -1,0 +1,246 @@
+.ns_footer {
+  padding: 20px 0;
+
+  .ns_footer_logo {
+    border-top: 1px solid $col-gray;
+    .ns_logo_with_text {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #000;
+      font-family: $font-meri;
+      padding-top: 26px;
+
+      img {
+        height: 40px;
+        width: auto;
+      }
+    }
+  }
+
+  .ns_footer_links_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+    padding: 26px 0;
+    gap: 20px;
+    border-bottom: 1px solid $col-gray;
+  }
+
+  .ns_link_lists {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 14px;
+    color: $col-primary;
+  }
+
+  .ns_link_lists a {
+    text-decoration: none;
+    font-family: $font-meri;
+    font-size: 14px;
+    color: $col-primary;
+
+    &:hover {
+      color: blue;
+    }
+  }
+  .ns_social_container {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .ns_social_contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+  }
+
+  .social_title {
+    font-family: $font-meri;
+    font-size: 16px;
+    font-weight: bold;
+    color: $col-primary;
+  }
+
+  .ns_social_imgs {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    img {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+  }
+
+  .ns_app_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .ns_app_imgs {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    img {
+      height: 40px;
+      width: auto;
+      cursor: pointer;
+    }
+  }
+  .featured_links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 20px 0;
+    border-bottom: 1px solid $col-gray;
+    border-top: 1px solid $col-gray;
+  }
+
+  .featured_links a {
+    font-family: $font-meri;
+    font-size: 14px;
+    color: $col-secondary;
+
+    &:hover {
+      color: blue;
+    }
+  }
+
+  .cp_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cp_title {
+    color: rgb(117, 117, 117);
+    font-size: 12px;
+    font-family: $font-meri;
+    font-weight: 400;
+    padding-bottom: 80px;
+    padding-top: 20px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .ns_footer {
+    .ns_footer_links_container {
+      justify-content: flex-start;
+      gap: 30px;
+    }
+
+    .ns_social_container {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 24px;
+    }
+
+    .featured_links {
+      flex-wrap: wrap;
+      row-gap: 10px;
+      text-align: center;
+    }
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .ns_footer {
+    padding: 16px 0;
+
+    .ns_footer_logo {
+      .ns_logo_with_text {
+        justify-content: center;
+        font-size: 20px;
+        padding-top: 20px;
+      }
+    }
+
+    .ns_footer_links_container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .ns_link_lists {
+      align-items: center;
+      row-gap: 10px;
+    }
+
+    .ns_social_container {
+      gap: 20px;
+    }
+
+    .ns_social_contents {
+      row-gap: 8px;
+    }
+
+    .social_title {
+      font-size: 15px;
+    }
+
+    .ns_app_imgs img {
+      height: 36px;
+    }
+
+    .featured_links {
+      gap: 10px;
+      padding: 16px 0;
+    }
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .ns_footer {
+    .ns_footer_logo {
+      .ns_logo_with_text {
+        font-size: 18px;
+
+        img {
+          height: 32px;
+        }
+      }
+    }
+
+    .ns_link_lists a {
+      font-size: 13px;
+    }
+
+    .social_title {
+      font-size: 14px;
+    }
+
+    .ns_social_imgs img {
+      width: 22px;
+      height: 22px;
+    }
+
+    .featured_links a {
+      font-size: 13px;
+    }
+
+    .cp_title {
+      padding-bottom: 40px;
+      font-size: 11px;
+      text-align: center;
+    }
+  }
+}
