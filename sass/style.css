@@ -363,6 +363,87 @@ header {
     grid-row: 1/2;
   }
 }
+.ns_leatest_trending_section {
+  padding: 60px 0;
+}
+.ns_leatest_trending_section .ns_trending_news_container {
+  display: grid;
+  grid-template-columns: 24% 52% 24%;
+  justify-content: space-between;
+  align-items: start;
+  gap: 10px;
+}
+.ns_leatest_trending_section .ns_tending_list_container {
+  border-top: 4px solid rgba(0, 0, 0, 0.42);
+}
+.ns_leatest_trending_section .ns_tab_btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 14px 0;
+  border-bottom: 1px solid #ddd;
+}
+.ns_leatest_trending_section .ns_tab_btn {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 18px;
+  font-family: 700;
+  line-height: 24px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: "Merriweather", serif;
+}
+.ns_leatest_trending_section .ns_tab_btn:hover:focus {
+  border-bottom: 3px solid rgb(214, 0, 0);
+}
+.ns_leatest_trending_section .ns_trending_text_content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid #ddd;
+}
+.ns_leatest_trending_section .ns_tern_num {
+  color: rgb(146, 146, 146);
+  font-size: 40px;
+  font-family: 700;
+  font-family: "Merriweather", serif;
+}
+.ns_leatest_trending_section .ns_desc {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  font-family: "Merriweather", serif;
+}
+.ns_leatest_trending_section .ns_desc:hover {
+  color: blue;
+  cursor: pointer;
+}
+.ns_leatest_trending_section .ns_tending_exclusive_container {
+  border-top: 4px solid rgba(0, 0, 0, 0.42);
+}
+.ns_leatest_trending_section .ns_exlu_heading {
+  padding: 14px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ns_leatest_trending_section .point_blue {
+  background: blue;
+  width: 20px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: block;
+}
+.ns_leatest_trending_section .exclu_heading_title {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 27px;
+  font-family: "Roboto", sans-serif;
+}
+
 .ns_video_slider {
   padding: 50px 0;
 }
