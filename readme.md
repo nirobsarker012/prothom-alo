@@ -1,6 +1,6 @@
 # Prothom Alo
 
-![Ena-Ema Banner](./public//prothom-alo.png)
+![Prothom-alo-banner](./public//prothom-alo.png)
 
 ## 🚀 Live Demo
 
